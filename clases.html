@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	class stiven{
+		constructor(name){
+			this.nombre=name;
+		}
+		obtener(){
+			return this.nombre;
+		}
+	}
+	function iniciar(){
+		obj=new stiven();
+		var h1=document.getElementById("hola");
+		h1.textContent=obj.obtener();
+	}
+}
+
+</head>
+<body onload="iniciar()">
+	<h1 id="hola"></h1>
+
+</body>
+</html>
